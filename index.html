@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="media/favicon.ico" rel="icon" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Map Haldwani</title>
+        <link rel="stylesheet" href="/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="vendor/parallax.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="headerContent">
+                <image src="/media/logo.png" width="50px"></image
+                ><a>Map Haldwani</a>
+            </div>
+        </div>
+        <script>
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                } else {
+                    $(".header").removeClass("active");
+                }
+            });
+        </script>
+
+        <div class="topContent">
+            <div id="firstRow" class="tableContainer">
+                <div id="firstRowBox1" class="tableContent">
+                    <div class="topHeader">Mapping Haldwani</div>
+                    <div class="topText">
+                        Our mission is to map every street and corner of
+                        Haldwani and beyond.
+                    </div>
+                    <div class="topButtonContainer">
+                        <a
+                            class="topButton"
+                            href="https://mg-lsj.github.io/Map-Haldwani"
+                            target="_blank"
+                        >
+                            <div class="topButtonText">Explore map</div>
+                        </a>
+                    </div>
+                </div>
+                <div id="firstRowBox2" class="tableContent">
+                    <img src="/media/roads.png" style="border-radius: 24px" />
+                </div>
+            </div>
+            <div id="secondRow" class="topProgress">
+                <div id="secondRowContainer" class="topProgressContainer">
+                    <div id="secondRowTextBox" class="topProgressTextBox">
+                        <div>More than</div>
+                        <div class="editCount">
+                            <!---->
+                            225,977
+                            <!---->
+                        </div>
+                        <div>map updates</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="doodleBorder"></div>
+
+        <div id="table1" class="tableLayout iLeft" style="padding-top: 64px">
+            <div class="tableContainer">
+                <div class="tableContent tableImage panImageContainer">
+                    <div class="panImage" style="border-radius: 24px"></div>
+                </div>
+                <div class="tableContent">
+                    <div class="textHeader">Accurate maps</div>
+                    <div class="textSub">
+                        The most accurate roads and map data you can get powered
+                        by user contributions.
+                    </div>
+                    <div>
+                        <a class="textLink" href="">
+                            <div class="textLinkText">
+                                Learn more about data accuracy
+                            </div>
+                            <img
+                                src="/media/icons/arrowRight.svg"
+                                style="margin-left: 4px; height: 1em"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".panImage").parallax({ imageSrc: "/media/mapPan.png" });
+        </script>
+        <div id="table2" class="tableLayout">
+            <div class="tableContainer">
+                <div class="tableContent">
+                    <div class="textHeader">Street imagery with Mapillary</div>
+                    <div class="textSub">
+                        Contribute data of your locality and make maps better.
+                    </div>
+                    <div>
+                        <a class="textLink" href="">
+                            <div class="textLinkText">
+                                Learn more about street imagey
+                            </div>
+                            <img
+                                src="/media/icons/arrowRight.svg"
+                                style="margin-left: 4px; height: 1em"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="tableContent tableImage">
+                    <img
+                        src="/media/mapillary.gif"
+                        style="
+                            border-radius: 1em;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        "
+                    />
+                </div>
+            </div>
+        </div>
+        <div id="table3" class="tableLayout iLeft">
+            <div class="tableContainer">
+                <div class="tableContent tableImage">
+                    <img
+                        src="/media/osm.png"
+                        style="
+                            border-radius: 1em;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        "
+                    />
+                </div>
+                <div class="tableContent">
+                    <div class="textHeader">
+                        Contribute data,<br />
+                        make maps better
+                    </div>
+                    <div class="textSub">
+                        Contribute data of your locality and make maps better.
+                    </div>
+                    <div>
+                        <a class="textLink" href="">
+                            <div class="textLinkText">
+                                Learn more about contributing data
+                            </div>
+                            <img
+                                src="/media/icons/arrowRight.svg"
+                                style="margin-left: 4px; height: 1em"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="table4" class="tableLayout">
+            <div class="tableContainer">
+                <div class="tableContent">
+                    <div class="textHeader">
+                        Open souce and <br />
+                        community driven
+                    </div>
+                    <div class="textSub">
+                        Built on data from open source and community driven
+                        projects like OpenStreetMap, Mapbox and Mapillary
+                    </div>
+                    <div>
+                        <a class="textLink" href="">
+                            <div class="textLinkText">
+                                Learn more about data providers
+                            </div>
+                            <img
+                                src="/media/icons/arrowRight.svg"
+                                style="margin-left: 4px; height: 1em"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="tableContent tableImage">
+                    <img src="/media/opensource.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="bottomContent">
+            <div class="bottomContainer">
+                <div class="bottomHeader">Explore map demo</div>
+                <div class="bottomButtonContainer">
+                    <a
+                        class="bottomButtonMap"
+                        href="https://mg-lsj.github.io/Map-Haldwani"
+                        target="_blank"
+                    >
+                        <div class="bottomButtonMapText">Explore map</div>
+                    </a>
+                    <a
+                        class="bottomButtonSource"
+                        href="https://github.com/MG-LSJ/Map-Haldwani"
+                        target="_blank"
+                    >
+                        <div class="bottomButtonSourceText">View Source</div>
+                    </a>
+                </div>
+                <div class="bottomText">
+                    This is just a map demo and the features and ui will change
+                    in the future.
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".bottomContainer").parallax({
+                imageSrc: "/media/bottomBG.png",
+            });
+        </script>
+        <footer class="footer">
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">View</div>
+                </div>
+                <a class="footerColumnText">Map</a>
+                <a class="footerColumnText">Source Code</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">Contribution</div>
+                </div>
+                <a class="footerColumnText">Edit</a>
+                <a class="footerColumnText">OSM</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">Legal</div>
+                </div>
+                <a class="footerColumnText">Data providers</a>
+                <a class="footerColumnText">Street imagery</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">About</div>
+                </div>
+                <a class="footerColumnText">Abou Map Haldwani</a>
+                <a class="footerColumnText">Contributers</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">Connect</div>
+                </div>
+                <a
+                    class="footerSocialIcon iconTg"
+                    href="https://t.me/+oF0oiGsL7ggxNWU1"
+                    target="_blank"
+                ></a>
+                <a
+                    class="footerSocialIcon iconGit"
+                    href="https://github.com/MG-LSJ/Map-Haldwani"
+                    target="_blank"
+                ></a>
+            </div>
+        </footer>
+    </body>
+</html>
