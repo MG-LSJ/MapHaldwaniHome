@@ -170,7 +170,7 @@ a {
     width: 187px;
     height: 18px;
     margin: auto auto -18px;
-    background: rgba(0, 0, 0, 0) url("/media/underline.png") no-repeat scroll
+    background: rgba(0, 0, 0, 0) url("media/underline.png") no-repeat scroll
         center center / 187px 18px;
 }
 
@@ -286,10 +286,6 @@ a {
     align-items: center;
     -moz-box-pack: center;
     justify-content: center;
-    /* background-image: url("/media/bottomBG.png");
-    background-color: rgb(33, 43, 54);
-    background-position: center center;
-    background-size: cover; */
     border-radius: 40px;
     text-align: center;
 }
@@ -395,11 +391,11 @@ a {
     height: 28px;
 }
 .footerSocialIcon.iconTg {
-    background: url("/media/icons/telegram.svg") no-repeat scroll center center /
+    background: url("media/icons/telegram.svg") no-repeat scroll center center /
         contain;
 }
 .footerSocialIcon.iconGit {
-    background: url("/media/icons/github.svg") no-repeat scroll center center /
+    background: url("media/icons/github.svg") no-repeat scroll center center /
         contain;
 }
 
