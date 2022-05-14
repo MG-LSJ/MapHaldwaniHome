@@ -5,13 +5,23 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Map Haldwani</title>
+
+        <link rel="stylesheet" href="vendor/css/footer.css" />
+        <link rel="stylesheet" href="vendor/css/header.css" />
+        <link rel="stylesheet" href="vendor/css/table.css" />
+
         <link rel="stylesheet" href="index.css" />
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="vendor/parallax.js"></script>
     </head>
     <body>
         <div class="header">
-            <div class="headerContent">
+            <div
+                class="headerContent"
+                href="index.html"
+                style="cursor: pointer"
+            >
                 <image src="media/logo.png" width="50px"></image
                 ><a>Map Haldwani</a>
             </div>
@@ -93,7 +103,7 @@
         <script>
             $(".panImage").parallax({ imageSrc: "media/mapPan.png" });
         </script>
-        <div id="table2" class="tableLayout">
+        <div id="table2" class="tableLayout iRight">
             <div class="tableContainer">
                 <div class="tableContent">
                     <div class="textHeader">Street imagery with Mapillary</div>
@@ -101,7 +111,7 @@
                         Contribute data of your locality and make maps better.
                     </div>
                     <div>
-                        <a class="textLink" href="">
+                        <a class="textLink" href="street/">
                             <div class="textLinkText">
                                 Learn more about street imagey
                             </div>
@@ -158,7 +168,7 @@
                 </div>
             </div>
         </div>
-        <div id="table4" class="tableLayout">
+        <div id="table4" class="tableLayout iRight">
             <div class="tableContainer">
                 <div class="tableContent">
                     <div class="textHeader">
@@ -222,8 +232,18 @@
                 <div class="footerColumnHeader">
                     <div class="footerColumnHeaderText">View</div>
                 </div>
-                <a class="footerColumnText">Map</a>
-                <a class="footerColumnText">Source Code</a>
+                <a
+                    class="footerColumnText"
+                    hrefhref="https://mg-lsj.github.io/Map-Haldwani"
+                    target="_blank"
+                    >Map</a
+                >
+                <a
+                    class="footerColumnText"
+                    href="https://github.com/MG-LSJ/Map-Haldwani"
+                    target="_blank"
+                    >Source Code</a
+                >
             </div>
             <div class="footerColumn">
                 <div class="footerColumnHeader">
@@ -237,7 +257,7 @@
                     <div class="footerColumnHeaderText">Legal</div>
                 </div>
                 <a class="footerColumnText">Data providers</a>
-                <a class="footerColumnText">Street imagery</a>
+                <a class="footerColumnText" href="street">Street imagery</a>
             </div>
             <div class="footerColumn">
                 <div class="footerColumnHeader">

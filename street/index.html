@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Street Imagery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link href="/media/favicon.ico" rel="icon" />
+        <link rel="stylesheet" href="/vendor/css/footer.css" />
+        <link rel="stylesheet" href="/vendor/css/header.css" />
+        <link rel="stylesheet" href="/vendor/css/table.css" />
+
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <div
+                class="headerContent"
+                href="index.html"
+                style="cursor: pointer"
+            >
+                <image src="/media/logo.png" width="50px"></image
+                ><a>Map Haldwani</a>
+            </div>
+        </div>
+        <script>
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                } else {
+                    $(".header").removeClass("active");
+                }
+            });
+        </script>
+
+        <div class="topContent">
+            <div id="firstRow" class="tableContainer">
+                <div id="firstRowBox1" class="tableContent">
+                    <div class="topHeader">
+                        Capture, upload and view street-level imagery
+                    </div>
+                    <div class="topText">
+                        Up to date street imagery with mapillary uploaded by
+                        users.
+                    </div>
+                </div>
+                <div id="firstRowBox2" class="tableContent">
+                    <img
+                        src="/media/mapillary.gif"
+                        style="border-radius: 24px"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="doodleBorder"></div>
+
+        <div class="section">
+            <div class="sectionHeaderText">
+                Upload your imagery
+                <br />
+                to the map
+            </div>
+        </div>
+
+        <div class="tableLayout iRight section">
+            <div class="tableContainer">
+                <div class="tableContent">
+                    <div class="textHeader">Mapillary for iOS and Android</div>
+                    <div class="textSub" style="margin-bottom: 24px">
+                        Start uploading street-level imagery directly from your
+                        mobile device.
+                    </div>
+                    <div class="downloadButtonContainer">
+                        <a
+                            class="AppStore"
+                            href="https://itunes.apple.com/us/app/mapillary-street-level-imagery/id757286802?mt=8"
+                            target="_blank"
+                        >
+                        </a>
+                        <a
+                            class="PlayStore"
+                            href="https://play.google.com/store/apps/details?id=com.mapillary.app&hl=en"
+                            target="_blank"
+                        >
+                        </a>
+                    </div>
+                </div>
+                <div class="tableContent tableImage">
+                    <img src="/media/phones.png" style="border-radius: 1em" />
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">View</div>
+                </div>
+                <a
+                    class="footerColumnText"
+                    hrefhref="https://mg-lsj.github.io/Map-Haldwani"
+                    target="_blank"
+                    >Map</a
+                >
+                <a
+                    class="footerColumnText"
+                    href="https://github.com/MG-LSJ/Map-Haldwani"
+                    target="_blank"
+                    >Source Code</a
+                >
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">Contribution</div>
+                </div>
+                <a class="footerColumnText">Edit</a>
+                <a class="footerColumnText">OSM</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">Legal</div>
+                </div>
+                <a class="footerColumnText">Data providers</a>
+                <a class="footerColumnText" href="street">Street imagery</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">About</div>
+                </div>
+                <a class="footerColumnText">Abou Map Haldwani</a>
+                <a class="footerColumnText">Contributers</a>
+            </div>
+            <div class="footerColumn">
+                <div class="footerColumnHeader">
+                    <div class="footerColumnHeaderText">Connect</div>
+                </div>
+                <a
+                    class="footerSocialIcon iconTg"
+                    href="https://t.me/+oF0oiGsL7ggxNWU1"
+                    target="_blank"
+                ></a>
+                <a
+                    class="footerSocialIcon iconGit"
+                    href="https://github.com/MG-LSJ/Map-Haldwani"
+                    target="_blank"
+                ></a>
+            </div>
+        </footer>
+    </body>
+</html>

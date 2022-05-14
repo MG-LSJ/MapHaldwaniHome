@@ -1,0 +1,60 @@
+.footer {
+    margin: auto auto 0px;
+    padding: 80px 0px;
+    max-width: 1216px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+.footerColumnHeader {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+.footerColumnHeaderText {
+    color: rgb(33, 43, 54);
+    font-size: 20px;
+    font-weight: 700;
+}
+.footerColumnText {
+    margin-bottom: 8px;
+    display: block;
+    color: rgb(99, 115, 129);
+}
+.footerSocialIcon {
+    margin-right: 12px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+.footerSocialIcon.iconTg {
+    background: url("/media/icons/telegram.svg") no-repeat scroll center center /
+        contain;
+}
+.footerSocialIcon.iconGit {
+    background: url("/media/icons/github.svg") no-repeat scroll center center /
+        contain;
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        padding: 80px 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footerColumnHeaderText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 64px 24px;
+    }
+    .footerColumn {
+        margin-bottom: 24px;
+        width: 50%;
+    }
+}

@@ -45,44 +45,6 @@ a {
     text-decoration: none;
 }
 
-.header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 0px 16px;
-    height: 75px;
-    display: flex;
-    transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
-    z-index: 3;
-    background: transparent none repeat scroll 0% 0%;
-    border-bottom: 0.5px solid transparent;
-}
-
-.header.active {
-    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-    border-bottom: 0.5px solid rgb(222, 229, 237);
-}
-
-.headerContent {
-    padding-left: 5%;
-    float: left;
-    display: block;
-    display: flex;
-    align-items: center;
-}
-.headerContent a {
-    padding-left: 0.5em;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 2em;
-}
-.header.active .headerContent a {
-    color: #000;
-}
-
 .topContent {
     margin: 0px auto;
     padding: 240px 0px 0px;
@@ -181,52 +143,6 @@ a {
         center center;
 }
 
-.tableLayout {
-    overflow: hidden;
-    width: 100%;
-    height: 560px;
-    display: flex;
-    -moz-box-align: center;
-    align-items: center;
-    -moz-box-pack: center;
-    justify-content: center;
-    border-bottom: 1px solid rgb(222, 229, 237);
-}
-
-.tableContainer {
-    max-width: 1216px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    -moz-box-align: center;
-    align-items: center;
-    -moz-box-pack: center;
-    justify-content: center;
-}
-
-.tableContent {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    -moz-box-pack: center;
-    justify-content: center;
-}
-.textHeader {
-    color: rgb(33, 43, 54);
-    font-size: 39px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
-.textSub {
-    margin-top: 16px;
-    line-height: 1.5;
-    color: rgb(99, 115, 129);
-    font-size: 20px;
-    font-weight: 400;
-}
 .textLink {
     margin-top: 16px;
     cursor: pointer;
@@ -250,9 +166,7 @@ a {
     font-size: 20px;
     font-weight: 700;
 }
-.tableImage {
-    align-items: center;
-}
+
 .panImage {
     width: 95%;
     max-height: 75%;
@@ -360,44 +274,6 @@ a {
     font-size: 16px;
     font-weight: 400;
 }
-.footer {
-    margin: auto auto 0px;
-    padding: 80px 0px;
-    max-width: 1216px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    -moz-box-pack: justify;
-    justify-content: space-between;
-}
-.footerColumnHeader {
-    margin-bottom: 16px;
-    font-size: 20px;
-}
-.footerColumnHeaderText {
-    color: rgb(33, 43, 54);
-    font-size: 20px;
-    font-weight: 700;
-}
-.footerColumnText {
-    margin-bottom: 8px;
-    display: block;
-    color: rgb(99, 115, 129);
-}
-.footerSocialIcon {
-    margin-right: 12px;
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-}
-.footerSocialIcon.iconTg {
-    background: url("media/icons/telegram.svg") no-repeat scroll center center /
-        contain;
-}
-.footerSocialIcon.iconGit {
-    background: url("media/icons/github.svg") no-repeat scroll center center /
-        contain;
-}
 
 @media (max-width: 1440px) {
     .topContent {
@@ -410,14 +286,8 @@ a {
         padding: 40px 0px 0px;
         flex-direction: column;
     }
-    .tableLayout {
-        padding: 0px 24px;
-    }
     .bottomContent {
         padding: 0px 24px;
-    }
-    .footer {
-        padding: 80px 24px;
     }
 }
 
@@ -447,35 +317,7 @@ a {
     .topProgressContainer {
         font-size: 24px;
     }
-    .tableLayout {
-        padding: 56px 0px 24px;
-        height: auto;
-    }
-    .tableLayout.iRight > div {
-        flex-direction: column;
-    }
-    .tableLayout.iLeft > div {
-        flex-direction: column-reverse;
-    }
-    .tableContainer {
-        flex-wrap: wrap;
-    }
-    .tableContent {
-        padding: 0px 24px;
-        width: 100%;
-        -moz-box-align: center;
-        align-items: center;
-        text-align: center;
-    }
-    .tableImage {
-        margin-top: 32px;
-    }
-    .textHeader {
-        font-size: 24px;
-    }
-    .textSub {
-        font-size: 16px;
-    }
+
     .textLinkText {
         font-size: 16px;
     }
@@ -496,9 +338,6 @@ a {
     .bottomText {
         font-size: 16px;
     }
-    .footerColumnHeaderText {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -512,12 +351,5 @@ a {
         width: 100%;
         height: 112px;
         flex-direction: column;
-    }
-    .footer {
-        padding: 64px 24px;
-    }
-    .footerColumn {
-        margin-bottom: 24px;
-        width: 50%;
     }
 }

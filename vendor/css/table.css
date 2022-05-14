@@ -1,0 +1,89 @@
+.tableLayout {
+    overflow: hidden;
+    width: 100%;
+    height: 560px;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(222, 229, 237);
+}
+
+.tableContainer {
+    max-width: 1216px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+.tableContent {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+.tableImage {
+    align-items: center;
+}
+
+.textHeader {
+    color: rgb(33, 43, 54);
+    font-size: 39px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.textSub {
+    margin-top: 16px;
+    line-height: 1.5;
+    color: rgb(99, 115, 129);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 1440px) {
+    .tableLayout {
+        padding: 0px 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tableLayout {
+        padding: 56px 0px 24px;
+        height: auto;
+    }
+    .tableLayout.iRight > div {
+        flex-direction: column;
+    }
+    .tableLayout.iLeft > div {
+        flex-direction: column-reverse;
+    }
+    .tableContainer {
+        flex-wrap: wrap;
+    }
+    .tableContent {
+        padding: 0px 24px;
+        width: 100%;
+        -moz-box-align: center;
+        align-items: center;
+        text-align: center;
+    }
+    .tableImage {
+        margin-top: 32px;
+    }
+    .textHeader {
+        font-size: 24px;
+    }
+    .textSub {
+        font-size: 16px;
+    }
+}
